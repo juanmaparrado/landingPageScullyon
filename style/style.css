@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-main {
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  display: grid;
+  place-items: center;
+}
+.container-main video {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.3;
+}
+.container-main .img {
+  position: absolute;
+  top: 12%;
+  width: 500px;
+}
+
+
