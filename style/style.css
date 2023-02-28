@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: font;
+}
+
+@font-face {
+  font-family: font ;
+  src: url(../recursos/nostalgia.otf);
 }
 nav{
   display: grid;
@@ -8,6 +14,7 @@ nav{
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   position: sticky;
+  width: 100%;
   height: 100px;
 }
 nav a{ 
@@ -23,42 +30,62 @@ nav img{
 }
 .container-main {
   position: relative;
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-items: center;
 }
 .container-main video {
   display: block;
   width: 100%;
-  max-height: 750px;
+  max-height: 760px;
   overflow: hidden;
   filter: grayscale(1);
   opacity: 0.8;
 }
 .container-main svg {
   position: absolute;
-  top: 30%;
-  width: 500px;
+  width: 50%;
+  object-fit: cover;
 }
 
 section{
   margin-top:6em ;
   padding: 2em;
   display: grid;
-  justify-content: center;
   place-items: center;
-  grid-template-columns: 2fr 2fr;
-  column-gap: 0;
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 20px;
 }
 canvas{
   border-radius: 2%;
+  border: 2px solid black;
   width: 100%;
+  object-fit: cover;
 }
 section div{
   display:grid;
   place-items: center;
   row-gap: 20px;
 }
+
+button {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+ }
+ 
+ button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ button:active {
+  transform: translate(0em, 0.2em);
+ }
 
 
 

@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROYECTO CSS</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./js/app.js" type="text/javascript"></script>
     <!--CDN ANIME.JS-->
-    
+
 </head>
 <body>
     <!--BARRA DE NAVEGACION-->
     <nav class="header">
-        <a href="">Contact Us</a>
+        <a href="">Contact</a>
         <a href="#container"><img src="./recursos/texto logo.png"></a>
-        <a href="">Shop</a>
+        <a href="#slideshow-container">Shop</a>
      </nav>
      <!--CABECERA VIDEO-->
     <div id="container" class="container-main" >
-        <video  muted autoplay loop >
+        <video autoplay loop >
             <source src="./recursos/videopromocion.mp4" type="video/mp4"/>
         </video>
         <svg id="capa" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652.8 371.88">
@@ -39,13 +40,11 @@
     </div>
     <!--Canvaaas-->
     <section id="slideshow-container">
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas" width="1204" height="1000"></canvas>
         <div>
             <h1>GO TO THE NEW COLLECTION</h1>
             <button>SHOP NOW</button>
         </div>
       </section>
-      
-    <script src="./js/app.js" type="text/javascript"></script>
 </body>
 </html>
