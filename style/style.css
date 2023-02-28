@@ -41,15 +41,24 @@ nav img{
   width: 500px;
 }
 
-.slideshow-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+section{
+  margin-top:6em ;
+  padding: 2em;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 0;
+}
+canvas{
+  border-radius: 2%;
+  width: 100%;
+}
+section div{
+  display:grid;
+  place-items: center;
+  row-gap: 20px;
 }
 
-canvas{
-  width: 640px;
-  height: 800px;
-}
 
 
