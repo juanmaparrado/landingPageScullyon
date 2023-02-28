@@ -37,6 +37,18 @@ function animate() {
   renderer.render(scene, camera);
 }
 
+//funcion para intentar hacerlo responsive 
+//para que funcione hay que recargar el browser
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+}
+
+window.addEventListener('resize', onWindowResize);
+
 animate();
 
 
