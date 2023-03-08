@@ -6,11 +6,11 @@ camera.position.z = 5;
 const renderer = new THREE.WebGLRenderer({canvas: document.getElementById("canvas2")});
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-const ambientLight = new THREE.AmbientLight(0x000000, 1);
+const ambientLight = new THREE.AmbientLight(0x000000, 0.5);
 scene.add(ambientLight);
 
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load( '../recursos/LOGO.jpg' );
+const texture = textureLoader.load( '../recursos/back.jpg');
 
 scene.background = texture;
 
