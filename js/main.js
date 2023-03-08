@@ -6,6 +6,15 @@ camera.position.z = 5;
 const renderer = new THREE.WebGLRenderer({canvas: document.getElementById("canvas2")});
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+const ambientLight = new THREE.AmbientLight(0x000000, 1);
+scene.add(ambientLight);
+
+const textureLoader = new THREE.TextureLoader();
+const texture = textureLoader.load( '../recursos/LOGO.jpg' );
+
+scene.background = texture;
+
+
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
 const cubeTexture = new THREE.TextureLoader().load('../recursos/slider2.jpg');
 const cubeMaterial = new THREE.MeshBasicMaterial({map: cubeTexture});
@@ -38,4 +47,3 @@ function animate() {
 }
 
 animate();
-//El responsive del entorno 3D funciona al recargar la pagina.

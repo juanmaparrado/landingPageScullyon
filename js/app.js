@@ -32,3 +32,16 @@ function nextImage() {
 }
 
 drawImage();
+
+const h1 = document.querySelector('#slideshow-container h1');
+const button = document.querySelector('#slideshow-container button');
+
+const bounceAnimation = anime({
+  targets: [h1, button],
+  translateY: {
+    value: [+100, 0],
+    duration: 2000,
+    elasticity: 400,
+  },
+  loop: true
+});
