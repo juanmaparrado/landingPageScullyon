@@ -19,8 +19,8 @@ function drawImage() {
   ctx.filter = filter;
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
   ctx.filter = "none";
-  soundEffect.play();
   setTimeout(nextImage, 5000);
+  soundEffect.play();
   };
 }
 function nextImage() {

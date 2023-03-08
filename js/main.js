@@ -38,6 +38,4 @@ function animate() {
 }
 
 animate();
-
-
-
+//El responsive del entorno 3D funciona al recargar la pagina.
